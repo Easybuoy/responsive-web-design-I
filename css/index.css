@@ -200,10 +200,7 @@ nav ul li a:hover {
   text-align: center;
 }
 
-.header-text-container {
-  text-align: center;
-  margin-bottom: 50px;
-}
+
 
 .header {
   width: 100%;
@@ -212,6 +209,11 @@ nav ul li a:hover {
   border-bottom: 1px solid black;
   padding-bottom: 5px;
 }
+
+.header-text-container {
+    text-align: center;
+    margin-bottom: 50px;
+  }
 
 .header-text {
   text-align: center;
@@ -273,6 +275,80 @@ hr {
   margin-bottom: 50px;
 }
 
+.services-page .header {
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.services-page .header .section-2 {
+    margin: 20px auto;
+    width: 100%;
+}
+
+.services-page .header {
+    border: none;
+}
+
+.services-page .footer {
+    width: 100%;
+    text-align: center;
+}
+.card-group {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+	justify-content: space-between;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+
+}
+
+.card {
+	border: 1px solid black;
+	margin: 20px auto;
+	width: 40%;
+	background-color: #f4f3f4;
+}
+
+.card-body {
+	padding: 5%;
+	margin: 2%;
+}
+
+.card-img-container {
+	align-items: center;
+	text-align: center;
+}
+
+.card-img {
+	max-width: 100%;
+}
+
+.p-text {
+	font-size: 100%;
+}
+
+.services-button {
+	margin-top: 5%;
+	border: 1px solid black;
+	border-radius: 7px;
+	width: 45%;
+	height: 30%;
+	font-size: 1.75em;
+	background-color: #ffffff;
+}
+
+.services-button-text {
+	margin: 2%;
+}
+
+.square {
+	list-style-type: square;
+	line-height: 20px;
+}
+
+
 @media (max-width: 800px) {
   .nav {
     flex-direction: column;
@@ -297,6 +373,21 @@ hr {
     margin: 20px;
     margin: 10px auto;
   }
+
+  .services-button {
+	margin-top: 5%;
+	border: 1px solid black;
+	border-radius: 7px;
+	width: 50%;
+	height: 30%;
+	font-size: 1.25em;
+    background-color: #ffffff;
+}
+
+.services-page .section-2 {
+    width: 100%;
+    margin: 20px 10px;
+}
 }
 
 @media (max-width: 500px) {
@@ -338,5 +429,9 @@ hr {
     margin: 15px;
     width: 100%;
     justify-content: center;
+  }
+
+  .services-page .card-group .card {
+      width: 90%;
   }
 }
